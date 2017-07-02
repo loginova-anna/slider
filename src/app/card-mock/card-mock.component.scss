@@ -1,0 +1,12 @@
+.card-mock {
+  box-sizing: border-box;
+  background: darkseagreen;
+  border: 1px solid darkslategrey;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.card-mock:hover {
+  box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75);
+}

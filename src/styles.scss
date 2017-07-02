@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+$col-width: 60;
+
+.grid-col {
+  display: inline-block;
+  margin-right: -4px;
+}
+
+@media(min-width: 1080px) {
+  .grid {
+    width: $col-width*12px;
+    border: 1px solid mediumpurple;
+  }
+
+  .col-desktop-1 {
+    width: $col-width*1px;
+  }
+
+  .col-desktop-2 {
+    width: $col-width*2px;
+  }
+
+  .col-desktop-3 {
+    width: $col-width*3px;
+  }
+
+  .col-desktop-4 {
+    width: $col-width*4px;
+  }
+
+  .col-desktop-5 {
+    width: $col-width*5px;
+  }
+
+  .col-desktop-6 {
+    width: $col-width*6px;
+  }
+
+  .col-desktop-7 {
+    width: $col-width*7px;
+  }
+
+  .col-desktop-8 {
+    width: $col-width*8px;
+  }
+
+  .col-desktop-9 {
+    width: $col-width*9px;
+  }
+
+  .col-desktop-10 {
+    width: $col-width*10px;
+  }
+
+  .col-desktop-11 {
+    width: $col-width*11px;
+  }
+
+  .col-desktop-12 {
+    width: $col-width*12px;
+  }
+}
+
+@media(min-width: 720px) and (max-width: 1079px) {
+  .grid {
+    width: $col-width*8px;
+  }
+
+  .col-tablet-1 {
+    width: $col-width*1px;
+  }
+
+  .col-tablet-2 {
+    width: $col-width*2px;
+  }
+
+  .col-tablet-3 {
+    width: $col-width*3px;
+  }
+
+  .col-tablet-4 {
+    width: $col-width*4px;
+  }
+
+  .col-tablet-5 {
+    width: $col-width*5px;
+  }
+
+  .col-tablet-6 {
+    width: $col-width*6px;
+  }
+
+  .col-tablet-7 {
+    width: $col-width*7px;
+  }
+
+  .col-tablet-8 {
+    width: $col-width*8px;
+  }
+}
+
+@media(max-width: 719px) {
+  .grid {
+    width: $col-width*4px;
+  }
+
+  .col-phone-1 {
+    width: $col-width*1px;
+  }
+
+  .col-phone-2 {
+    width: $col-width*2px;
+  }
+
+  .col-phone-3 {
+    width: $col-width*3px;
+  }
+
+  .col-phone-4 {
+    width: $col-width*4px;
+  }
+}

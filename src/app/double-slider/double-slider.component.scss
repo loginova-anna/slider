@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.arrow {
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 198px;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.double-slider {
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+.double-slider__feed {
+  position: relative;
+}
+
+.double-slider__pane {
+  position: absolute;
+  transition: left .5s ease;
+}
+
+.double-slider__pane_0{
+  left: -200px;
+}
+
+.double-slider__pane_1{
+  left: 0px;
+}
+
+.double-slider__pane_2{
+  left: 200px;
+}
+
+.double-slider__pane_3{
+  left: 400px;
+}
+
+.overflowHidden{
+  overflow: hidden;
+}
+
+.hidden {
+  visibility: hidden;
+}

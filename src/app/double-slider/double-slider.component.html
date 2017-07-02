@@ -1,0 +1,21 @@
+
+<div class="arrow" (click)="backward()">backward</div>
+<div class="arrow" (click)="forward()">forward</div>
+<div (click)="deleteFirst()">delete</div>
+<div class="double-slider"
+     [ngClass]="{'overflowHidden': hideOverflow}"
+     (mouseover)="stopAutoShow()"
+      (mouseleave)="startAutoShow()">
+  <div class="double-slider__feed" #feed>
+    <div class="double-slider__pane"
+         *ngFor="let pane of panes; let ind = index;"
+         [ngClass]="{'double-slider__pane_0': ind === 0,
+                      'double-slider__pane_1': ind === 1,
+                      'double-slider__pane_2': ind === 2,
+                      'double-slider__pane_3': ind === 3,
+                      'hidden': (visible.indexOf(ind) === -1)}"
+         [id]="pane.paneId">
+      <card-mock [mock]="slides[pane.slideId]"></card-mock>
+    </div>
+  </div>
+</div>
